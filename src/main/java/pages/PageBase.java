@@ -15,10 +15,4 @@ public class PageBase {
 		//this --> read the page from the current class
 		PageFactory.initElements(driver, this);
 	}
-//	public void setUser() {
-//		this.username = "User"+new Random().nextInt(11) + 20;
-//	}
-//	public String getUser() {
-//		return this.username;
-//	}
 }
