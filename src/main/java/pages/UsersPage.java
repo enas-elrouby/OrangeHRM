@@ -16,10 +16,10 @@ public class UsersPage extends PageBase{
 	WebElement addUserBtn;
 	
 	@FindBy(css="input[id='systemUser_employeeName_empName']")
-	WebElement employeeNameTxt;
+	public WebElement employeeNameTxt;
 	
 	@FindBy(css="input[id='systemUser_userName']")
-	WebElement usernameTxt;
+	public WebElement usernameTxt;
 	
 	@FindBy(css="input[id='systemUser_password']")
 	WebElement passwordTxt;

@@ -30,10 +30,6 @@ public class TestBase {
 		driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
 	}
 	
-	public void navigation( String url) {
-		driver.navigate().to(String.format("https://btt-dev.noprod-b.kmt.orange.com/%s", url));
-	}
-	
 	@AfterSuite
 	public void stopDriver() {
 //		driver.quit();

@@ -24,9 +24,7 @@ public class UsersTest extends TestBase{
 		usersPage = new UsersPage(driver);
 		usersPage.navigateToAddNewUserPage();
 		usersPage.addNewUser();
-		
 //		Assert.assertEquals("Successfully Saved",usersPage.creationMsgToast.getText());
-		
 	}
 
 }

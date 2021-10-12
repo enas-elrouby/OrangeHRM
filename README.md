@@ -1,3 +1,3 @@
-# BTT-Selenium
+# OrangeHRM-Selenium
 
 Selenium project using Java

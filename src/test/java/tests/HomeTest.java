@@ -12,12 +12,13 @@ import pages.UsersPage;
 public class HomeTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
-	UsersPage userPage;
+	UsersPage usersPage;
 	
 	@Test(priority=3)
 	public void SearchForExistingUser() {
 		loginPage = new LoginPage(driver);
 		homePage = new HomePage(driver);
+		usersPage= new UsersPage(driver);
 //		loginPage.userLogin("Admin", "admin123");
 		System.out.println("SearchForExistingUser");
 //		homePage.navigateToUsersView();
@@ -26,6 +27,7 @@ public class HomeTest extends TestBase {
 		homePage.searchForUser();
 		Assert.assertTrue(homePage.userSearchResultRow.isDisplayed());
 		homePage.openUserDetailsPage();
+
 	}
 	
 }

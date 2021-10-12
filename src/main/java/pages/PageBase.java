@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageBase {
 	protected WebDriver driver;
-	protected static String username = "User"+new Random().nextInt(11) + 20; 
+	protected static String username = "User"+new Random().nextInt(100) + 20;
 
 	// create constructor
 	public PageBase(WebDriver webDriver) {
