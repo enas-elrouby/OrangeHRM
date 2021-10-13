@@ -7,7 +7,7 @@ public class UsersTest extends TestBase{
 	UsersPage usersPage;
 	HomePage homePage;
 	
-	@Test(priority=2, enabled=true)
+	@Test(priority=2, suiteName ="Regression suit")
 	public void addNewUserSuccessfully() throws InterruptedException {
 		System.out.println("addNewUserSuccessfully");
 		homePage = new HomePage(driver);

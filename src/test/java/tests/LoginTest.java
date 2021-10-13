@@ -6,7 +6,7 @@ import pages.LoginPage;
 
 public class LoginTest extends TestBase {
 	LoginPage loginPage;
-	@Test(priority=1)
+	@Test(priority=1, suiteName ="Regression suit")
 	public void userCanLoginSuccessfully() throws InterruptedException {
 		System.out.println("userCanLoginSuccessfully");
 		loginPage =new LoginPage(driver);

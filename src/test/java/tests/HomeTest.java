@@ -11,7 +11,7 @@ import pages.LoginPage;
 import pages.UsersPage;
 public class HomeTest extends TestBase {
 	HomePage homePage;
-	@Test(priority=3)
+	@Test(priority=3,suiteName ="Regression suit")
 	public void SearchForExistingUser() {
 		homePage = new HomePage(driver);
 		System.out.println("SearchForExistingUser");;

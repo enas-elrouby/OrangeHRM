@@ -5,7 +5,7 @@ import pages.UsersPage;
 
 public class UserDetailsTest extends TestBase{
     UsersPage usersPage;
-    @Test
+    @Test(priority=4, suiteName ="Regression suit")
     public void verifyUserData(){
         usersPage= new UsersPage(driver);
 		System.out.println("EmployeeName = "+usersPage.employeeNameTxt.getAttribute("value"));
