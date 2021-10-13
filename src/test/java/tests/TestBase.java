@@ -22,7 +22,7 @@ public class TestBase {
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("fireFox")) {
-			System.out.println("useing browseris firefox");
+			System.out.println("using browser firefox");
 			
 		}
 		driver.manage().window().maximize();

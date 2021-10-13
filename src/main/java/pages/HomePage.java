@@ -39,7 +39,7 @@ public class HomePage extends PageBase{
 		usersLink.click();
 	}
 	public void searchForUser() {
-		usernameSearchTxt.sendKeys(PageBase.username);
+		usernameSearchTxt.sendKeys(PageBase.Insertedusername);
 		searchBtn.click();
 	}
 	public void openUserDetailsPage() {

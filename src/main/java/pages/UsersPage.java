@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Sleeper;
 
 public class UsersPage extends PageBase{
+	public String employeeName =PageBase.InsertedemployeeName;
+	public String username =PageBase.Insertedusername;
 
 	public UsersPage(WebDriver driver) {
 		super(driver);
@@ -39,8 +41,8 @@ public class UsersPage extends PageBase{
 	}
 	
 	public void addNewUser() throws InterruptedException {
-		employeeNameTxt.sendKeys("Orange Test");
-		usernameTxt.sendKeys(PageBase.username);
+		employeeNameTxt.sendKeys(PageBase.InsertedemployeeName);
+		usernameTxt.sendKeys(PageBase.Insertedusername);
 		passwordTxt.sendKeys("WelcomeOrange2");
 		confirmPasswordTxt.sendKeys("WelcomeOrange2");
 		saveBtn.click();
